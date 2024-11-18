@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta name="description" content="Contact Manchester United Fan Club">
+    <meta name="keywords" content="Manchester United, contact, fan club">
+    <title>Contact - Manchester United Fan Club</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/DALL·E 2024-10-28 21.07.47 - A custom logo for a Manchester United fan club. The logo should feature iconic elements like a football, red and black colors, and a sense of communit.webp" alt="Manchester United Logo" class="club-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <form action="mailto:contact@manutdfanclub.com" method="post">
+                <label for="salutation">Salutation:</label>
+                <select id="salutation" name="salutation" required>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                </select><br>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required autofocus><br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br>
+                <label for="body">Message:</label>
+                <textarea id="body" name="body" required></textarea><br>
+                <label>Type of Contact:</label><br>
+                <input type="radio" id="support" name="contact-type" value="support" required>
+                <label for="support">Supporter Inquiry</label><br>
+                <input type="radio" id="event" name="contact-type" value="event">
+                <label for="event">Event Inquiry</label><br>
+                <label>Subscribe:</label><br>
+                <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label><br>
+                <input type="checkbox" id="notifications" name="subscribe" value="notifications">
+                <label for="notifications">Get notifications on upcoming matches</label><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Manchester United Fan Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
