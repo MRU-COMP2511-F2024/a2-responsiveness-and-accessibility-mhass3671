@@ -1,0 +1,152 @@
+
+body {
+    background-color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #da291c;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.club-logo {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #ffd700;
+}
+
+.main-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #da291c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #da291c;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+@media (max-width: 590px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 590px) and (max-width: 790px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main-image {
+        grid-column: span 2;
+        width: 60%;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 790px) {
+    body {
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    header, footer {
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .main-image {
+        width: 40%;
+    }
+}
