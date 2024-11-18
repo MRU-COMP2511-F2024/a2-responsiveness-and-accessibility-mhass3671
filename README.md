@@ -59,3 +59,21 @@ Symmetry and Order:
 Common Fate:
 
 -Buttons and other interactive elements  have been built using the same color scheme and styled similarly using hover for feedback. This is so the user will know which elements he can act on.
+
+
+Document the category of issues that you identified through the manual and automated analysis above
+- We didn’t find any issues during manual or automated checks, but the analysis focused on things like making sure the content is clear, easy to use, and works well on all devices.
+
+What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
+- Honestly, no changes were needed since everything was good. But if there were issues, they’d probably involve fixing the layout, making stuff more readable, or improving navigation.
+
+How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
+- The site already followed Gestalt principles like grouping similar stuff together (proximity), keeping things consistent (similarity), and making sure it’s easy to read and follow (figure-ground and continuity). So, everything just worked well.
+
+
+
+
+
+
+
+
